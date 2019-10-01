@@ -1,0 +1,17 @@
+[package]
+name = "pop-theme-switcher"
+version = "0.1.0"
+authors = ["Michael Aaron Murphy <mmstick@pm.me>"]
+edition = "2018"
+license = "GPLv3"
+readme = "README.md"
+
+[workspace]
+members = [ "ffi", "tools" ]
+
+[dependencies]
+gtk-extras = { git = "https://github.com/pop-os/gtk-extras" }
+# gtk-extras = { path = "../gtk-extras" }
+glib = "0.8.2"
+gtk = "0.7.0"
+gio = "0.7.0"
