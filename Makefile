@@ -2,8 +2,8 @@ prefix ?= /usr/local
 libdir = $(prefix)/lib
 includedir = $(prefix)/include
 
-export SCREENSHOT_DARK = $(libdir)/pop-theme-switcher/dark.png
-export SCREENSHOT_LIGHT = $(libdir)/pop-theme-switcher/light.png
+export SCREENSHOT_DARK = $(libdir)/theme-switcher/dark.png
+export SCREENSHOT_LIGHT = $(libdir)/theme-switcher/light.png
 
 TARGET = debug
 DEBUG ?= 0
