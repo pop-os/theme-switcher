@@ -1,5 +1,4 @@
 use glib::object::{Cast, ObjectType};
-use gtk::WidgetExt;
 use pop_theme_switcher::PopThemeSwitcher as Switcher;
 use std::ptr;
 

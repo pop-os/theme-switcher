@@ -154,7 +154,7 @@ impl PopThemeSwitcher {
             glib::Continue(true)
         });
 
-        Self((*theme_switcher).clone())
+        Self(theme_switcher.into())
     }
 
     pub fn grab_focus(&self) {
