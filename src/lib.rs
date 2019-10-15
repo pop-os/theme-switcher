@@ -44,12 +44,14 @@ impl PopThemeSwitcher {
                 SelectionVariant {
                     name:   "Light",
                     image:  Some(SCREENSHOT_LIGHT),
+                    size_request: Some((250, 400)),
                     active: !dark_mode,
                     event:  ThemeSelection::Light,
                 },
                 SelectionVariant {
                     name:   "Dark",
                     image:  Some(SCREENSHOT_DARK),
+                    size_request: Some((250, 400)),
                     active: dark_mode,
                     event:  ThemeSelection::Dark,
                 },
@@ -165,7 +167,6 @@ impl PopThemeSwitcher {
                 let inner = inner.downcast::<gtk::Container>().unwrap();
                 if let Some(radio) = iter_from::<gtk::RadioButton, _>(&inner).next() {
                     if radio.get_active() {
-                        eprintln!("grabbing focus");
                         child.grab_focus();
                     }
                 }

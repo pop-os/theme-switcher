@@ -2,8 +2,8 @@ prefix ?= /usr/local
 libdir = $(prefix)/lib
 includedir = $(prefix)/include
 
-export SCREENSHOT_DARK = $(libdir)/theme-switcher/dark.png
-export SCREENSHOT_LIGHT = $(libdir)/theme-switcher/light.png
+export SCREENSHOT_DARK = $(libdir)/theme-switcher/dark.svg
+export SCREENSHOT_LIGHT = $(libdir)/theme-switcher/light.svg
 
 TARGET = debug
 DEBUG ?= 0
@@ -20,6 +20,7 @@ endif
 PACKAGE = pop_theme_switcher
 PKGCONFIG = target/$(PACKAGE).pc
 FFI = target/$(TARGET)/lib$(PACKAGE).so
+BIN = target/$(TARGET)/pop-theme-switcher
 
 all: $(BIN) $(PKGCONFIG)
 
@@ -36,8 +37,8 @@ $(FFI): Cargo.toml Cargo.lock ffi/src/lib.rs vendor-check
 	cargo build $(ARGS) --manifest-path ffi/Cargo.toml
 
 install:
-	install -Dm0644 screenshots/dark.png "$(DESTDIR)$(SCREENSHOT_DARK)"
-	install -Dm0644 screenshots/light.png "$(DESTDIR)$(SCREENSHOT_LIGHT)"
+	install -Dm0644 screenshots/dark.svg "$(DESTDIR)$(SCREENSHOT_DARK)"
+	install -Dm0644 screenshots/light.svg "$(DESTDIR)$(SCREENSHOT_LIGHT)"
 	install -Dm0644 target/$(TARGET)/lib$(PACKAGE).so "$(DESTDIR)$(libdir)/lib$(PACKAGE).so"
 	install -Dm0644 $(PKGCONFIG) "$(DESTDIR)$(libdir)/pkgconfig/$(PACKAGE).pc"
 	install -Dm0644 ffi/$(PACKAGE).h "$(DESTDIR)$(includedir)/$(PACKAGE).h"
