@@ -38,22 +38,22 @@ impl PopThemeSwitcher {
             let current_theme = gdi.gtk_theme();
             let current_theme = current_theme.as_ref().map_or("", |s| s.as_str());
 
-            let dark_mode = dbg!(current_theme.contains("dark"));
+            let dark_mode = current_theme.contains("dark");
 
             [
                 SelectionVariant {
-                    name:   "Light",
-                    image:  Some(SCREENSHOT_LIGHT),
-                    size_request: Some((250, 400)),
-                    active: !dark_mode,
-                    event:  ThemeSelection::Light,
+                    name:         "Light",
+                    image:        Some(SCREENSHOT_LIGHT),
+                    size_request: None,
+                    active:       !dark_mode,
+                    event:        ThemeSelection::Light,
                 },
                 SelectionVariant {
-                    name:   "Dark",
-                    image:  Some(SCREENSHOT_DARK),
-                    size_request: Some((250, 400)),
-                    active: dark_mode,
-                    event:  ThemeSelection::Dark,
+                    name:         "Dark",
+                    image:        Some(SCREENSHOT_DARK),
+                    size_request: None,
+                    active:       dark_mode,
+                    event:        ThemeSelection::Dark,
                 },
             ]
         };
