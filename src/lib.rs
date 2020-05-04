@@ -7,6 +7,8 @@ use gtk_extras::{
     ImageSelection, SelectionVariant, ToggleVariant, VariantToggler,
 };
 
+use std::cell::Cell;
+use std::rc::Rc;
 use std::ops::Deref;
 
 #[derive(Clone, Copy, Debug)]
@@ -60,8 +62,15 @@ impl PopThemeSwitcher {
 
         let (tx, rx) = glib::MainContext::channel(glib::PRIORITY_DEFAULT);
 
-        let handler = move |event| {
-            let _ = tx.send(event);
+        //TODO: fix extra events from ImageSelection::new
+        let selection_ready = Rc::new(Cell::new(false));
+        let handler = {
+            let selection_ready = selection_ready.clone();
+            move |event| {
+                if selection_ready.get() {
+                    let _ = tx.send(event);
+                }
+            }
         };
 
         let selection = cascade! {
@@ -73,6 +82,7 @@ impl PopThemeSwitcher {
             ..set_halign(gtk::Align::Center);
         };
 
+        selection_ready.set(true);
         rx.attach(None, move |event| {
             let (gtk_theme, gedit_scheme) = match event {
                 ThemeSelection::Light => ("Pop", "pop-light"),
