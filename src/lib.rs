@@ -33,7 +33,7 @@ pub struct PopThemeSwitcher(gtk::Container);
 
 impl PopThemeSwitcher {
     pub fn new() -> Self {
-        let gpe = GeditPreferencesEditor::new();
+        let gpe = GeditPreferencesEditor::new_checked();
         let gdi = GnomeDesktopInterface::new();
 
         let variants = {
@@ -89,7 +89,9 @@ impl PopThemeSwitcher {
                 ThemeSelection::Dark => ("Pop-dark", "pop-dark"),
             };
 
-            gpe.set_scheme(gedit_scheme);
+            if let Some(gpe) = gpe.as_ref() {
+                gpe.set_scheme(gedit_scheme);
+            }
             gdi.set_gtk_theme(gtk_theme);
 
             glib::Continue(true)
@@ -99,7 +101,7 @@ impl PopThemeSwitcher {
     }
 
     pub fn dark_and_slim() -> Self {
-        let gpe = GeditPreferencesEditor::new();
+        let gpe = GeditPreferencesEditor::new_checked();
         let gdi = GnomeDesktopInterface::new();
 
         let mut flags = 0;
@@ -160,7 +162,9 @@ impl PopThemeSwitcher {
                 ("Pop", "pop-light")
             };
 
-            gpe.set_scheme(gedit_scheme);
+            if let Some(gpe) = gpe.as_ref() {
+                gpe.set_scheme(gedit_scheme);
+            }
             gdi.set_gtk_theme(gtk_theme);
 
             glib::Continue(true)
