@@ -18,7 +18,7 @@ Depends:
   libgtk-3-0,
   libxml2,
   ${misc:Depends},
-  ${shlib:Depends}
+  ${shlibs:Depends}
 Description: Pop theme switcher widget library
  Shared library for C which provides the Pop!_OS theme switcher as a GTK widget.
 
