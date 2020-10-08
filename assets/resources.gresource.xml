@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+    <gresource prefix="/org/Pop-OS/ThemeSwitcher">
+        <file compressed="true">dark.svg</file>
+        <file compressed="true">light.svg</file>
+    </gresource>
+</gresources>

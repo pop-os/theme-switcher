@@ -42,14 +42,14 @@ fn main() {
         let _window = cascade! {
             gtk::ApplicationWindowBuilder::new()
                 .application(app)
-                .icon_name("firmware-manager")
+                .icon_name("pop-theme-switcher")
                 .window_position(gtk::WindowPosition::Center)
                 .build();
             ..set_titlebar(Some(&headerbar));
             ..add(&widget);
             ..show_all();
             ..connect_delete_event(move |window, _| {
-                window.destroy();
+                window.close();
 
                 // Allow this closure to attain ownership of our firmware widget,
                 // so that this widget will exist for as long as the window exists.

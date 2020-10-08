@@ -2,6 +2,7 @@
 name = "pop-theme-switcher"
 version = "0.1.0"
 authors = ["Michael Aaron Murphy <mmstick@pm.me>"]
+description = "GTK theme switcher for Pop!_OS GNOME Settings Appearance panel"
 edition = "2018"
 license = "GPLv3"
 readme = "README.md"
@@ -11,7 +12,6 @@ members = [ "ffi", "tools" ]
 
 [dependencies]
 gtk-extras = { git = "https://github.com/pop-os/gtk-extras" }
-# gtk-extras = { path = "../gtk-extras" }
-glib = "0.9.3"
-gtk = "0.8.1"
-gio = "0.8.1"
+glib = "0.10"
+gtk = "0.9"
+gio = "0.9"
