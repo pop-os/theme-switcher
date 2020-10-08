@@ -1,10 +1,12 @@
 #[macro_use]
 extern crate gtk_extras;
 
+mod gresource;
+
 use gtk::prelude::*;
 use gtk_extras::{
     settings::{GeditPreferencesEditor, GnomeDesktopInterface},
-    ImageSelection, SelectionVariant, ToggleVariant, VariantToggler,
+    ImageSelection, ImageSrc, SelectionVariant, ToggleVariant, VariantToggler,
 };
 
 use std::cell::Cell;
@@ -26,13 +28,12 @@ enum ThemeSelection {
 pub const DARK: u8 = 0b01;
 pub const SLIM: u8 = 0b10;
 
-pub const SCREENSHOT_DARK: &str = env!("SCREENSHOT_DARK");
-pub const SCREENSHOT_LIGHT: &str = env!("SCREENSHOT_LIGHT");
-
 pub struct PopThemeSwitcher(gtk::Container);
 
 impl PopThemeSwitcher {
     pub fn new() -> Self {
+        gresource::init().expect("failed to init pop-theme-switcher gresource");
+
         let gpe = GeditPreferencesEditor::new_checked();
         let gdi = GnomeDesktopInterface::new();
 
@@ -45,14 +46,14 @@ impl PopThemeSwitcher {
             [
                 SelectionVariant {
                     name:         "Light",
-                    image:        Some(SCREENSHOT_LIGHT),
+                    image:        Some(ImageSrc::Resource("/org/Pop-OS/ThemeSwitcher/light.svg")),
                     size_request: None,
                     active:       !dark_mode,
                     event:        ThemeSelection::Light,
                 },
                 SelectionVariant {
                     name:         "Dark",
-                    image:        Some(SCREENSHOT_DARK),
+                    image:        Some(ImageSrc::Resource("/org/Pop-OS/ThemeSwitcher/dark.svg")),
                     size_request: None,
                     active:       dark_mode,
                     event:        ThemeSelection::Dark,
@@ -74,7 +75,7 @@ impl PopThemeSwitcher {
         };
 
         let selection = cascade! {
-            ImageSelection::new(&variants, "", handler);
+            ImageSelection::new(&variants, ImageSrc::Resource(""), handler);
             ..set_max_children_per_line(2);
             ..set_min_children_per_line(2);
             ..set_column_spacing(24);

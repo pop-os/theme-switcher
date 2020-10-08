@@ -2,9 +2,6 @@ prefix ?= /usr/local
 libdir = $(prefix)/lib
 includedir = $(prefix)/include
 
-export SCREENSHOT_DARK = $(libdir)/theme-switcher/dark.svg
-export SCREENSHOT_LIGHT = $(libdir)/theme-switcher/light.svg
-
 TARGET = debug
 DEBUG ?= 0
 ifeq ($(DEBUG),0)
@@ -21,14 +18,22 @@ PACKAGE = pop_theme_switcher
 PKGCONFIG = target/$(PACKAGE).pc
 FFI = target/$(TARGET)/lib$(PACKAGE).so
 BIN = target/$(TARGET)/pop-theme-switcher
+GRESOURCE = target/compiled.gresource
 
-all: $(BIN) $(PKGCONFIG)
+all: $(GRESOURCE) $(BIN) $(PKGCONFIG)
 
 clean:
 	rm -rf target
 
 distclean: clean
 	rm -rf .cargo vendor vendor.tar
+
+$(GRESOURCE):
+	mkdir target -p
+	glib-compile-resources \
+		--sourcedir=assets \
+		--target=$(GRESOURCE) \
+		assets/resources.gresource.xml
 
 $(BIN): Cargo.toml Cargo.lock src/lib.rs vendor-check
 	cargo build $(ARGS)
@@ -37,8 +42,6 @@ $(FFI): Cargo.toml Cargo.lock ffi/src/lib.rs vendor-check
 	cargo build $(ARGS) --manifest-path ffi/Cargo.toml
 
 install:
-	install -Dm0644 screenshots/dark.svg "$(DESTDIR)$(SCREENSHOT_DARK)"
-	install -Dm0644 screenshots/light.svg "$(DESTDIR)$(SCREENSHOT_LIGHT)"
 	install -Dm0644 target/$(TARGET)/lib$(PACKAGE).so "$(DESTDIR)$(libdir)/lib$(PACKAGE).so"
 	install -Dm0644 $(PKGCONFIG) "$(DESTDIR)$(libdir)/pkgconfig/$(PACKAGE).pc"
 	install -Dm0644 ffi/$(PACKAGE).h "$(DESTDIR)$(includedir)/$(PACKAGE).h"
