@@ -15,8 +15,6 @@ Homepage: https://github.com/pop-os/theme-switcher
 Package: libpop-theme-switcher
 Architecture: amd64
 Depends:
-  libgtk-3-0,
-  libxml2,
   ${misc:Depends},
   ${shlibs:Depends}
 Description: Pop theme switcher widget library
