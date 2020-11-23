@@ -7,7 +7,6 @@ Build-Depends:
   cargo,
   rustc (>=1.36.0),
   libgtk-3-dev,
-  libxml2-dev,
   pkg-config,
 Standards-Version: 4.3.0
 Homepage: https://github.com/pop-os/theme-switcher
