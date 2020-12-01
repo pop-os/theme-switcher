@@ -1,6 +1,6 @@
 [package]
 name = "pop-theme-switcher"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Michael Aaron Murphy <mmstick@pm.me>"]
 description = "GTK theme switcher for Pop!_OS GNOME Settings Appearance panel"
 edition = "2018"
