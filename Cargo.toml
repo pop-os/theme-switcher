@@ -4,7 +4,7 @@ version = "0.1.1"
 authors = ["Michael Aaron Murphy <mmstick@pm.me>"]
 description = "GTK theme switcher for Pop!_OS GNOME Settings Appearance panel"
 edition = "2018"
-license = "GPLv3"
+license = "LGPLv3"
 readme = "README.md"
 
 [workspace]
