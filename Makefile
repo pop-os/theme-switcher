@@ -18,22 +18,14 @@ PACKAGE = pop_theme_switcher
 PKGCONFIG = target/$(PACKAGE).pc
 FFI = target/$(TARGET)/lib$(PACKAGE).so
 BIN = target/$(TARGET)/pop-theme-switcher
-GRESOURCE = target/compiled.gresource
 
-all: $(GRESOURCE) $(BIN) $(PKGCONFIG)
+all: $(BIN) $(PKGCONFIG)
 
 clean:
 	rm -rf target
 
 distclean: clean
 	rm -rf .cargo vendor vendor.tar
-
-$(GRESOURCE):
-	mkdir target -p
-	glib-compile-resources \
-		--sourcedir=assets \
-		--target=$(GRESOURCE) \
-		assets/resources.gresource.xml
 
 $(BIN): Cargo.toml Cargo.lock src/lib.rs vendor-check
 	cargo build $(ARGS)
