@@ -14,7 +14,7 @@ fn main() {
     let application = gtk::ApplicationBuilder::new().application_id(APP_ID).build();
 
     application.connect_activate(|app| {
-        if let Some(window) = app.get_window_by_id(0) {
+        if let Some(window) = app.window_by_id(0) {
             window.present();
         }
     });
@@ -60,5 +60,5 @@ fn main() {
         };
     });
 
-    application.run(&[]);
+    application.run();
 }

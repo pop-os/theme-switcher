@@ -39,7 +39,6 @@ impl PopThemeSwitcher {
 
         let variants = {
             let current_theme = gdi.gtk_theme();
-            let current_theme = current_theme.as_ref().map_or("", |s| s.as_str());
 
             let dark_mode = current_theme.contains("dark");
 
@@ -109,7 +108,6 @@ impl PopThemeSwitcher {
 
         let variants = {
             let current_theme = gdi.gtk_theme();
-            let current_theme = current_theme.as_ref().map_or("", |s| s.as_str());
 
             let dark_mode = current_theme.contains("dark");
             let slim_mode = current_theme.contains("slim");
@@ -178,10 +176,10 @@ impl PopThemeSwitcher {
         use gtk_extras::widgets::iter_from;
 
         for child in iter_from::<gtk::FlowBoxChild, gtk::Container>(&*self) {
-            if let Some(inner) = child.get_child() {
+            if let Some(inner) = child.child() {
                 let inner = inner.downcast::<gtk::Container>().unwrap();
                 if let Some(radio) = iter_from::<gtk::RadioButton, _>(&inner).next() {
-                    if radio.get_active() {
+                    if radio.is_active() {
                         child.grab_focus();
                     }
                 }
