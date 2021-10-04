@@ -12,7 +12,7 @@ Standards-Version: 4.3.0
 Homepage: https://github.com/pop-os/theme-switcher
 
 Package: libpop-theme-switcher
-Architecture: amd64
+Architecture: amd64 arm64
 Depends:
   ${misc:Depends},
   ${shlibs:Depends}
