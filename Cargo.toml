@@ -11,7 +11,7 @@ readme = "README.md"
 members = [ "ffi", "tools" ]
 
 [dependencies]
-gtk-extras = { git = "https://github.com/pop-os/gtk-extras", branch = "gtk-rs-0.14" }
+gtk-extras = { git = "https://github.com/pop-os/gtk-extras" }
 glib = "0.14"
 gtk = "0.14"
 gio = "0.14"
