@@ -76,7 +76,6 @@ impl PopThemeSwitcher {
         let selection = cascade! {
             ImageSelection::new(&variants, ImageSrc::Resource(""), handler);
             ..set_max_children_per_line(2);
-            ..set_min_children_per_line(2);
             ..set_column_spacing(24);
             ..set_row_spacing(24);
             ..set_halign(gtk::Align::Center);
