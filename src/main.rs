@@ -26,12 +26,6 @@ fn main() {
                 PopThemeSwitcher::new();
                 ..set_border_width(12);
             });
-            // ..add(&cascade! {
-            //     gtk::Frame::new(None);
-            //     ..set_halign(gtk::Align::Center);
-            //     ..set_border_width(12);
-            //     ..add(&*PopThemeSwitcher::dark_and_slim());
-            // });
         };
 
         let headerbar = gtk::HeaderBarBuilder::new()
