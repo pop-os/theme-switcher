@@ -5,7 +5,7 @@
    viewBox="0 0 66.145832 103.18751"
    version="1.1"
    id="svg8"
-   sodipodi:docname="light-src.svg"
+   sodipodi:docname="light.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,15 +27,15 @@
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:zoom="0.97778217"
-     inkscape:cx="267.95334"
-     inkscape:cy="295.56685"
+     inkscape:zoom="2.4684585"
+     inkscape:cx="40.106001"
+     inkscape:cy="202.15045"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer9"
+     inkscape:current-layer="layer10"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-page="true">
@@ -393,7 +393,7 @@
              id="path4524" />
           <path
              d="m 112.004,113.006 c -2.896,0 -5.791,1.105 -8,3.312 l 6.547,7.932 h 0.006 a 2,2 0 0 0 2.888,-0.006 h 0.004 l 6.555,-7.926 a 11.283,11.283 0 0 0 -8,-3.312 z"
-             style="opacity:1;fill:#2b2928;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              transform="translate(-104.003,-112.002)"
              id="path4526" />
         </g>
@@ -450,7 +450,7 @@
              id="path60525" />
           <path
              d="m 110,760 -5,-5 5,-5 z"
-             style="opacity:1;fill:#2b2928;fill-opacity:1;stroke:none"
+             style="opacity:1;fill:#000000;fill-opacity:1;stroke:none"
              transform="rotate(-90,-315.5,431.5)"
              id="path60523" />
         </g>
@@ -500,101 +500,101 @@
        inkscape:label="Menu Text">
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#000000;fill-opacity:1"
          x="14.728473"
          y="32.1073"
          id="text28045"><tspan
            sodipodi:role="line"
            id="tspan28043"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#000000;fill-opacity:1"
            x="14.728473"
            y="32.1073">System76</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.46389"
          y="64.349655"
          id="text30623"><tspan
            sodipodi:role="line"
            id="tspan30621"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.46389"
            y="64.349655">Bluetooth On</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.728473"
          y="72.113029"
          id="text36721"><tspan
            sodipodi:role="line"
            id="tspan36719"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.728473"
            y="72.113029">7:76 Remaining (100%)</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.728473"
          y="79.948723"
          id="text40105"><tspan
            sodipodi:role="line"
            id="tspan40103"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.728473"
            y="79.948723">Settings</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.46389"
          y="88.200691"
          id="text43871"><tspan
            sodipodi:role="line"
            id="tspan43869"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.46389"
            y="88.200691">Lock</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.46389"
          y="95.897041"
          id="text47901"><tspan
            sodipodi:role="line"
            id="tspan47899"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.46389"
            y="95.897041">Power Off / Log Out</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.728473"
          y="40.498615"
          id="text53989"><tspan
            sodipodi:role="line"
            id="tspan53987"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.728473"
            y="40.498615">Select Network</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.76375"
          y="48.448963"
          id="text56149"><tspan
            sodipodi:role="line"
            id="tspan56147"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.76375"
            y="48.448963">Turn Off</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
          x="14.728473"
          y="56.097683"
          id="text57715"><tspan
            sodipodi:role="line"
            id="tspan57713"
-           style="stroke-width:0.264583"
+           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
            x="14.728473"
            y="56.097683">WiFi Settings</tspan></text>
     </g>
