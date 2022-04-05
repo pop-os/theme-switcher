@@ -27,9 +27,9 @@
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
-     inkscape:zoom="2.4684585"
-     inkscape:cx="40.106001"
-     inkscape:cy="202.15045"
+     inkscape:zoom="5.0990578"
+     inkscape:cx="112.76593"
+     inkscape:cy="277.89448"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -83,6 +83,30 @@
          in2="BackgroundImage"
          mode="darken"
          id="feBlend3868" />
+    </filter>
+    <filter
+       height="1"
+       id="a"
+       style="color-interpolation-filters:sRGB"
+       width="1"
+       x="0"
+       y="0">
+      <feBlend
+         in2="BackgroundImage"
+         mode="darken"
+         id="feBlend945" />
+    </filter>
+    <filter
+       height="1"
+       id="a-3"
+       style="color-interpolation-filters:sRGB"
+       width="1"
+       x="0"
+       y="0">
+      <feBlend
+         in2="BackgroundImage"
+         mode="darken"
+         id="feBlend5449" />
     </filter>
   </defs>
   <metadata
@@ -285,25 +309,6 @@
       </g>
       <g
          style="enable-background:new"
-         id="g4015"
-         transform="matrix(0.26458334,0,0,0.26458334,7.9375003,68.881588)">
-        <g
-           style="display:inline;fill:#4c5263;fill-opacity:1;enable-background:new"
-           id="g3999">
-          <path
-             d="m -391,-281 h 16 v 16 h -16 z"
-             style="color:#dddddd;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#808080;fill-opacity:0.01;stroke:none;stroke-width:1;marker:none"
-             transform="rotate(90,-328,63)"
-             id="path3995" />
-          <path
-             d="m 112,152 a 2,2 0 0 0 -2,2 h -1 a 2,2 0 0 0 -2,2 v 9 a 2,2 0 0 0 2,2 h 6 a 2,2 0 0 0 2,-2 v -9 a 2,2 0 0 0 -2,-2 l -1,0.002 V 154 a 2,2 0 0 0 -2,-2 z"
-             style="opacity:1;fill:#2b2928;fill-opacity:1;stroke:none"
-             transform="translate(-104,-152)"
-             id="path3997" />
-        </g>
-      </g>
-      <g
-         style="enable-background:new"
          id="g4042"
          transform="matrix(0.26458334,0,0,0.26458334,7.9375003,76.831937)">
         <g
@@ -493,6 +498,25 @@
              id="path60690" />
         </g>
       </g>
+      <g
+         style="enable-background:new"
+         id="g5474"
+         transform="matrix(0.26458334,0,0,0.26458334,7.9375003,68.881588)">
+        <g
+           style="display:inline;fill:#4c5263;fill-opacity:1;enable-background:new"
+           id="g5458">
+          <path
+             d="m -391,-281 h 16 v 16 h -16 z"
+             style="color:#dddddd;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#808080;fill-opacity:0.01;stroke:none;stroke-width:1;marker:none"
+             transform="rotate(90,-328,63)"
+             id="path5454" />
+          <path
+             d="m 32,172 a 2,2 0 0 0 -2,2 h -1 a 2,2 0 0 0 -2,2 v 9 a 2,2 0 0 0 2,2 h 6 a 2,2 0 0 0 2,-2 v -9 a 2,2 0 0 0 -2,-2 l -1,0.002 V 174 a 2,2 0 0 0 -2,-2 z m 0,4 v 3 h 3 l -3,5 v -3 h -3 z"
+             style="opacity:1;fill:#232323;fill-opacity:1;stroke:none"
+             transform="translate(-24,-172)"
+             id="path5456" />
+        </g>
+      </g>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -522,15 +546,15 @@
            y="64.349655">Bluetooth On</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';fill:#2b2928;fill-opacity:1;stroke-width:0.264583"
          x="14.728473"
          y="72.113029"
          id="text36721"><tspan
            sodipodi:role="line"
            id="tspan36719"
-           style="stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
+           style="fill:#2b2928;fill-opacity:1;stroke-width:0.264583"
            x="14.728473"
-           y="72.113029">7:76 Remaining (100%)</tspan></text>
+           y="72.113029">Fully Charged</tspan></text>
       <text
          xml:space="preserve"
          style="font-size:3.52777px;line-height:1.25;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:0.264583;fill:#2b2928;fill-opacity:1"
@@ -699,22 +723,22 @@
          id="panel-volume-waves"
          transform="matrix(0.26458334,0,0,0.26458334,-21.146366,111.12447)" />
       <g
-         style="fill:#dddddd;fill-opacity:1;enable-background:new"
-         id="g2036"
+         style="enable-background:new"
+         id="g970"
          transform="matrix(0.26458334,0,0,0.26458334,56.885419,1.8515542)">
         <g
-           style="display:inline;fill:#dddddd;fill-opacity:1;enable-background:new"
-           id="g2020">
+           style="display:inline;fill:#4c5263;fill-opacity:1;enable-background:new"
+           id="g954">
           <path
              d="m -391,-281 h 16 v 16 h -16 z"
-             style="color:#dddddd;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#dddddd;fill-opacity:0.01;stroke:none;stroke-width:1;marker:none"
+             style="color:#dddddd;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#808080;fill-opacity:0.01;stroke:none;stroke-width:1;marker:none"
              transform="rotate(90,-328,63)"
-             id="path2016" />
+             id="path950" />
           <path
-             d="m 112,152 a 2,2 0 0 0 -2,2 h -1 a 2,2 0 0 0 -2,2 v 9 a 2,2 0 0 0 2,2 h 6 a 2,2 0 0 0 2,-2 v -9 a 2,2 0 0 0 -2,-2 l -1,0.002 V 154 a 2,2 0 0 0 -2,-2 z"
+             d="m 32,172 a 2,2 0 0 0 -2,2 h -1 a 2,2 0 0 0 -2,2 v 9 a 2,2 0 0 0 2,2 h 6 a 2,2 0 0 0 2,-2 v -9 a 2,2 0 0 0 -2,-2 l -1,0.002 V 174 a 2,2 0 0 0 -2,-2 z m 0,4 v 3 h 3 l -3,5 v -3 h -3 z"
              style="opacity:1;fill:#dddddd;fill-opacity:1;stroke:none"
-             transform="translate(-104,-152)"
-             id="path2018" />
+             transform="translate(-24,-172)"
+             id="path952" />
         </g>
       </g>
     </g>
